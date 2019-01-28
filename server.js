@@ -13,7 +13,7 @@ app.use(express.json());
 
 
 //Accesses the routing files and helps our server determine what needs to be done based on the requests
-//("./app/routing/apiRoutes")(app);
+require("./app/routing/apiRoutes")(app);
 require("./app/routing/htmlRoutes")(app);
 
 //Our listener to start the server up
