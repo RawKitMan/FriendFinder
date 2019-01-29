@@ -6,11 +6,10 @@ const app = express();
 //Sets the Port for our server listener used down below
 const PORT = 3000;
 
-//Makes it so Express can handle data parsing as JSON objects
+//Middleware used so Express can handle data parsing as JSON objects
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
-
+app.use(express.static('./public'));
 
 //Accesses the routing files and helps our server determine what needs to be done based on the requests
 require("./app/routing/apiRoutes")(app);

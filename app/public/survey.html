@@ -1,12 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
     <title>Friend Finder: Survey</title>
 </head>
+
 <body>
-    <h1>Survey!</h1> 
+
+    <form>
+        <div class="form-group row">
+            <label for="userName" class="col-sm-2 col-form-label">Name</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="userName" placeholder="Enter Name">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="imageURL" class="col-sm-2 col-form-label">Image URL Of You</label>
+            <div class="col-sm-10">
+                <input type="url" class="form-control" id="imageURL" placeholder="Image URL">
+            </div>
+        </div>
+    </form>
+    <h2>Please answer the following questions to the best of your knowledge (1 for least likely, 5 for most likely ):</h1>
+
+        <!--Question 1-->
+        <h3></h3>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio1-1" name="question1" class="custom-control-input" value="1">
+            <label class="custom-control-label" for="radio1-1">1</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio1-2" name="question1" class="custom-control-input" value="2">
+            <label class="custom-control-label" for="radio1-2">2</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio1-3" name="question1" class="custom-control-input" value="3">
+            <label class="custom-control-label" for="radio1-3">3</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio1-4" name="question1" class="custom-control-input" value="4">
+            <label class="custom-control-label" for="radio1-4">4</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio1-5" name="question1" class="custom-control-input" value="5">
+            <label class="custom-control-label" for="radio1-5">5</label>
+        </div>
+
+        <!--Question 2-->
+        <h3></h3>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio2-1" name="question2" class="custom-control-input" value="1">
+            <label class="custom-control-label" for="radio2-1">1</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio2-2" name="question2" class="custom-control-input" value="2">
+            <label class="custom-control-label" for="radio2-2">2</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio2-3" name="question2" class="custom-control-input" value="3">
+            <label class="custom-control-label" for="radio2-3">3</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio2-4" name="question2" class="custom-control-input" value="4">
+            <label class="custom-control-label" for="radio2-4">4</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio2-5" name="question2" class="custom-control-input" value="5">
+            <label class="custom-control-label" for="radio2-5">5</label>
+        </div>
+
+        <!--Question 3-->
+        <h3></h3>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio3-1" name="question3" class="custom-control-input" value="1">
+            <label class="custom-control-label" for="radio3-1">1</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio3-2" name="question3" class="custom-control-input" value="2">
+            <label class="custom-control-label" for="radio3-2">2</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio3-3" name="question3" class="custom-control-input" value="3">
+            <label class="custom-control-label" for="radio3-3">3</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio3-4" name="question3" class="custom-control-input" value="4">
+            <label class="custom-control-label" for="radio3-4">4</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio3-5" name="question3" class="custom-control-input" value="5">
+            <label class="custom-control-label" for="radio3-5">5</label>
+        </div>
+
+        <!--Question 4-->
+        <h3></h3>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio4-1" name="question4" class="custom-control-input" value="1">
+            <label class="custom-control-label" for="radio4-1">1</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio4-2" name="question4" class="custom-control-input" value="2">
+            <label class="custom-control-label" for="radio4-2">2</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio4-3" name="question4" class="custom-control-input" value="3">
+            <label class="custom-control-label" for="radio4-3">3</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio4-4" name="question4" class="custom-control-input" value="4">
+            <label class="custom-control-label" for="radio4-4">4</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio4-5" name="question4" class="custom-control-input" value="5">
+            <label class="custom-control-label" for="radio4-5">5</label>
+        </div>
+
+        <!--Question 5-->
+        <h3></h3>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio5-1" name="question5" class="custom-control-input" value="1">
+            <label class="custom-control-label" for="radio5-1">1</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio5-2" name="question5" class="custom-control-input" value="2">
+            <label class="custom-control-label" for="radio5-2">2</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio5-3" name="question5" class="custom-control-input" value="3">
+            <label class="custom-control-label" for="radio5-3">3</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio5-4" name="question5" class="custom-control-input" value="4">
+            <label class="custom-control-label" for="radio5-4">4</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio5-5" name="question5" class="custom-control-input" value="5">
+            <label class="custom-control-label" for="radio5-5">5</label>
+        </div>
+
+        <!--Question 6-->
+        <h3></h3>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio6-1" name="question6" class="custom-control-input" value="1">
+            <label class="custom-control-label" for="radio6-1">1</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio6-2" name="question6" class="custom-control-input" value="2">
+            <label class="custom-control-label" for="radio6-2">2</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio6-3" name="question6" class="custom-control-input" value="3">
+            <label class="custom-control-label" for="radio6-3">3</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio6-4" name="question6" class="custom-control-input" value="4">
+            <label class="custom-control-label" for="radio6-4">4</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio6-5" name="question6" class="custom-control-input" value="5">
+            <label class="custom-control-label" for="radio6-5">5</label>
+        </div>
+
+        <!--Question 7-->
+        <h3></h3>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio7-1" name="question7" class="custom-control-input" value="1">
+            <label class="custom-control-label" for="radio7-1">1</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio7-2" name="question7" class="custom-control-input" value="2">
+            <label class="custom-control-label" for="radio7-2">2</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio7-3" name="question7" class="custom-control-input" value="3">
+            <label class="custom-control-label" for="radio7-3">3</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio7-4" name="question7" class="custom-control-input" value="4">
+            <label class="custom-control-label" for="radio7-4">4</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio7-5" name="question7" class="custom-control-input" value="5">
+            <label class="custom-control-label" for="radio7-5">5</label>
+        </div>
+
+        <!--Question 8-->
+        <h3></h3>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio8-1" name="question8" class="custom-control-input" value="1">
+            <label class="custom-control-label" for="radio8-1">1</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio8-2" name="question8" class="custom-control-input" value="2">
+            <label class="custom-control-label" for="radio8-2">2</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio8-3" name="question8" class="custom-control-input" value="3">
+            <label class="custom-control-label" for="radio8-3">3</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio8-4" name="question8" class="custom-control-input" value="4">
+            <label class="custom-control-label" for="radio8-4">4</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio8-5" name="question8" class="custom-control-input" value="5">
+            <label class="custom-control-label" for="radio8-5">5</label>
+        </div>
+
+        <!--Question 9-->
+        <h3></h3>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio9-1" name="question9" class="custom-control-input" value="1">
+            <label class="custom-control-label" for="radio9-1">1</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio9-2" name="question9" class="custom-control-input" value="2">
+            <label class="custom-control-label" for="radio9-2">2</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio9-3" name="question9" class="custom-control-input" value="3">
+            <label class="custom-control-label" for="radio9-3">3</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio9-4" name="question9" class="custom-control-input" value="4">
+            <label class="custom-control-label" for="radio9-4">4</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio9-5" name="question9" class="custom-control-input" value="5">
+            <label class="custom-control-label" for="radio9-5">5</label>
+        </div>
+
+        <!--Question 10-->
+        <h3></h3>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio10-1" name="question10" class="custom-control-input" value="1">
+            <label class="custom-control-label" for="radio10-1">1</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio10-2" name="question10" class="custom-control-input" value="2">
+            <label class="custom-control-label" for="radio10-2">2</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio10-3" name="question10" class="custom-control-input" value="3">
+            <label class="custom-control-label" for="radio10-3">3</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio10-4" name="question10" class="custom-control-input" value="4">
+            <label class="custom-control-label" for="radio10-4">4</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio10-5" name="question10" class="custom-control-input" value="5">
+            <label class="custom-control-label" for="radio10-5">5</label>
+        </div>
+
+        <div>
+            <button class="btn btn-primary" type="submit" id="submit">Submit</button>
+        </div>
+
+        <div class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $("#submit").on("click", function (event) {
+        event.preventDefault();
+
+        let value1 = $("input[name='question1']:checked").val();
+        let value2 = $("input[name='question2']:checked").val();
+        let value3 = $("input[name='question3']:checked").val();
+        let value4 = $("input[name='question4']:checked").val();
+        let value5 = $("input[name='question5']:checked").val();
+        let value6 = $("input[name='question6']:checked").val();
+        let value7 = $("input[name='question7']:checked").val();
+        let value8 = $("input[name='question8']:checked").val();
+        let value9 = $("input[name='question9']:checked").val();
+        let value10 = $("input[name='question10']:checked").val();
+
+        let responses = [value1, value2, value3, value4, value5, value6, value7, value8, value9, value10];
+
+
+        let userSurvey = {
+            name: $("#userName").val().trim(),
+            imageURL: $("#imageURL").val().trim(),
+            responses: responses
+        };
+
+        console.log(userSurvey);
+
+        $.post("/api/friends", userSurvey, function (data) {
+
+            if (data) {
+                console.log("Did I Do It?");
+            }
+            else {
+                alert("Please complete the form correctly");
+            }
+        });
+
+        $("#userName").val("");
+        $("#imageURL").val("");
+        $("input[name='question1']").prop("checked", false);
+        $("input[name='question2']").prop("checked", false);
+        $("input[name='question3']").prop("checked", false);
+        $("input[name='question4']").prop("checked", false);
+        $("input[name='question5']").prop("checked", false);
+        $("input[name='question6']").prop("checked", false);
+        $("input[name='question7']").prop("checked", false);
+        $("input[name='question8']").prop("checked", false);
+        $("input[name='question9']").prop("checked", false);
+        $("input[name='question10']").prop("checked", false);      
+
+    });
+</script>
+
 </html>
