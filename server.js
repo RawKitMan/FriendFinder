@@ -1,10 +1,9 @@
-
 //Using Express for all of our server need
 const express = require("express");
 const app = express();
 
 //Sets the Port for our server listener used down below
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 //Middleware used so Express can handle data parsing as JSON objects
 app.use(express.urlencoded({ extended: true }));
