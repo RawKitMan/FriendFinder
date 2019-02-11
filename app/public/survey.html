@@ -365,7 +365,7 @@ we will compare the user's answers with those who have already taken the survey.
         };
 
         //If the form is not filled out 100%, the modal will alert the user
-        if (userSurvey.name === "" || userSurvey.imageURL === "" || responses.indexOf(undefined) > 0) {
+        if (userSurvey.name === "" || userSurvey.imageURL === "" || responses.indexOf(undefined) > -1) {
             const alert = $("<h4>");
             alert.text("Please fill out the survey completely.")
             $(".modal-body").append(alert);
@@ -389,8 +389,10 @@ we will compare the user's answers with those who have already taken the survey.
             //Variable that holds the index in our data array where our best match is.
             let bestMatchIndex;
 
+            console.log(userSurvey);
+
             //We only want this to work if the form is fully completed.
-            if (userSurvey.name !== "" && userSurvey.imageURL !== "" && responses.indexOf(undefined) > 0) {
+            if (userSurvey.name !== "" && userSurvey.imageURL !== "" && userSurvey.responses.indexOf(undefined) === -1) {
                 data.forEach(function (element) {
                     //Stores the sum of the diffences for each question. We will compare this variable with friendDifference.
                     let totalDifference = 0;
@@ -412,6 +414,7 @@ we will compare the user's answers with those who have already taken the survey.
                 });
 
                 let foundMatch = data[bestMatchIndex];
+                console.log
                 console.log(foundMatch);
 
                 //if (userSurvey.name !== "" && userSurvey.imageURL !== "" && responses === 10) 
